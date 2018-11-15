@@ -1,0 +1,14 @@
+<Alloy>
+	<Window class="container" exitOnClose="true" backgroundColor="#CC1945">
+		 <View id="viewImage" backgroundColor="#CC1945" height="75%">
+		      <Label top="5%" left="3%" text="Fallados:" id="labelcontadorFallados"></Label>
+		      <Label top="5%" left="75%" text="Exitosos:" id="labelcontadorExitoso"></Label>
+		 </View>
+		 <View id="viewBotones" backgroundColor="#CC1945" height="25%" width="100%" 
+		       layout="horizontal">
+		 	 <Button id="btnCaptura" onClick="CapturaFoto"></Button>
+		 	 <Button id="btnEnviar">Enviar</Button>
+		 	 <Button id="btnGaleria" onClick="AbrirGaleria"></Button>
+		 </View>
+	</Window>
+</Alloy>

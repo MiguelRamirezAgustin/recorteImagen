@@ -1,0 +1,53 @@
+".container": {
+	backgroundColor:"white",
+	layout:"vertical",
+	borderColor:"white",
+	borderWidth:0.5,
+	orientationModes:[
+		 Titanium.UI.PORTRAIT
+	 ]
+}
+
+"#btnCaptura":{
+	width:"22%",
+	height:"13%",	
+	borderColor:"#CC1945",
+	top:"25%",
+	left:"6%",
+	title:"Camara",
+	backgroundColor:"#CC1945",
+	color:"white",
+	font:{
+		fontSize:15
+	}
+}
+
+
+"#btnEnviar":{
+	width:"22%",
+	height:"13%",	
+	borderColor:"#CC1945",
+	top:"25%",
+	left:"10%",
+	title:"Enviar",
+	backgroundColor:"#CC1945",
+	color:"white",
+	font:{
+		fontSize:15
+	}
+}
+
+
+"#btnGaleria":{
+	width:"22%",
+	height:"13%",	
+	borderColor:"#CC1945",
+	top:"25%",
+	left:"10%",
+	title:"galeria",
+	backgroundColor:"#CC1945",
+	color:"white",
+	font:{
+		fontSize:15
+	}
+}

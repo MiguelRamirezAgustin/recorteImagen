@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.recorteimagen</id>
+    <name>recorteimage</name>
+    <version>1.0</version>
+    <publisher>not specified</publisher>
+    <url>unspecified</url>
+    <description>not specified</description>
+    <copyright>not specified</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>ac539f3f-70f1-48db-9ddd-4b20029a6d2e</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <property name="run-on-main-thread" type="bool">true</property>
+    <ios>
+        <enable-launch-screen-storyboard>false</enable-launch-screen-storyboard>
+        <use-app-thinning>true</use-app-thinning>
+        <plist>
+            <dict>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+    	<manifest>
+    	    <uses-permission android:name="android.permission.CAMERA"/>
+            <uses-feature android:name="android.hardware.camera"/>
+            <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        </manifest>
+    </android>
+    <modules>
+        <module platform="android">hyperloop</module>
+        <module platform="commonjs">ti.cloud</module>
+        <module platform="android">ti.imagefactory</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="windows">true</target>
+    </deployment-targets>
+    <sdk-version>7.1.0.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+    <property name="appc-app-id" type="string">5beca519914e5c42040c5a8c</property>
+    <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-development" type="string">FUNlnQkIjnpqgZ3r4gZFPi9JQ55pY2lm</property>
+    <property name="acs-oauth-key-development" type="string">kPfJBAtFHja85EkOoe7bfLUXqO9HbOAa</property>
+    <property name="acs-api-key-development" type="string">gB4qnv5xbIWlfRNxmXSeNo8vSLm2vFns</property>
+    <property name="acs-username-development" type="string">appc_app_user_dev</property>
+    <property name="acs-password-development" type="string">yVQ77JqZHmPuNViY0F</property>
+    <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-production" type="string">x1GgKvgBEHIJ8S98QjTBVAiZqy8xGRN5</property>
+    <property name="acs-oauth-key-production" type="string">SKCSXGoxjGQfXQ4y2KGChED9HWNcNqWr</property>
+    <property name="acs-api-key-production" type="string">ceGuJOujqmysG5qIQZldEwdGcADb920X</property>
+    <property name="acs-username-production" type="string">appc_app_user</property>
+    <property name="acs-password-production" type="string">ByMx8lbOQL4kJU36pc</property>
+    <property name="appc-org-id" type="string">576676933863168</property>
+    <property name="appc-creator-user-id" type="string">58ee0ab4-bd3b-4b8b-b90f-beed37683fe9</property>
+</ti:app>
